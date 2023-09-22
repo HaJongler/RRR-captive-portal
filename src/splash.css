@@ -1,0 +1,67 @@
+
+body {
+    background: url('house.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	-webkit-background-size: cover;
+	background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 60%;
+    margin: 40vh auto 0 ;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin: 10px 0 30px 0;
+}
+
+input[type="submit"]:hover {
+    background: darkblue;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Default button style */
+input[type="submit"] {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+
+/* Style for the checked checkbox */
+#terms:not(:checked) + label + input {
+	background-color: #ccc;
+	cursor: not-allowed;
+	pointer-events: none;
+}
